@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>无限马里奥 · Infinite Mario</title>
+		<meta charset="utf-8">
+        <script type="text/javascript" src="jquery.min.js"></script>
+	</head>
+	<body style="margin:0;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;">
+		<div style="text-align:center;padding:10px;">
+			<h1 style="color:#fff;font-size:28px;margin:0 0 6px 0;letter-spacing:2px;text-shadow:2px 2px 0 #e0432a;">🍄 无限马里奥 · Infinite Mario</h1>
+			<div style="color:#ffd93d;font-size:15px;margin-bottom:10px;">还原经典版 <b>8 个世界</b> · 城堡 <b>Boss 关</b> · 关卡无限生成</div>
+			<canvas id="canvas" width="640" height="480" style="display:block;border:2px solid #333;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.6);">
+				<p>Your browser does not support the canvas element.</p>
+			</canvas>
+			<div style="color:#ccc;font-size:14px;margin-top:12px;line-height:1.9;background:#161616;border:1px solid #333;border-radius:8px;padding:10px 18px;display:inline-block;text-align:left;">
+				<b style="color:#fff;">🎮 操作说明</b><br>
+				<span style="color:#7fd8a4;">【 ↑ 】</span> 跳跃<br>
+				<span style="color:#7fd8a4;">【 ← → 】</span> 左右移动<br>
+				<span style="color:#7fd8a4;">【 A 】</span> 加速跑<br>
+				<span style="color:#7fd8a4;">【 S 】</span> 确认键（地图界面进入关卡）<br>
+				<span style="color:#ffd93d;">💡</span> 标题画面按 <b>↑</b> 或 <b>S</b> 开始游戏
+			</div>
+		</div>
+
+        <!-- Enjine Includes -->
+        <script src="Enjine/core.js"></script>
+        <script src="Enjine/gameCanvas.js"></script>
+        <script src="Enjine/keyboardInput.js"></script>
+        <script src="Enjine/resources.js"></script>
+        <script src="Enjine/drawable.js"></script>
+        <script src="Enjine/state.js"></script>
+        <script src="Enjine/gameTimer.js"></script>
+        <script src="Enjine/camera.js"></script>
+        <script src="Enjine/drawableManager.js"></script>
+        <script src="Enjine/sprite.js"></script>
+        <script src="Enjine/spriteFont.js"></script>
+        <script src="Enjine/frameSprite.js"></script>
+        <script src="Enjine/animatedSprite.js"></script>
+        <script src="Enjine/collideable.js"></script>
+        <script src="Enjine/application.js"></script>
+
+        <!-- Actual game code -->
+        <script src="code/setup.js"></script>
+        <script src="code/spriteCuts.js"></script>
+        <script src="code/level.js"></script>
+        <script src="code/backgroundGenerator.js"></script>
+        <script src="code/backgroundRenderer.js"></script>
+        <script src="code/improvedNoise.js"></script>
+        <script src="code/notchSprite.js"></script>
+        <script src="code/character.js"></script>
+        <script src="code/levelRenderer.js"></script>
+        <script src="code/levelGenerator.js"></script>
+        <script src="code/spriteTemplate.js"></script>
+        <script src="code/enemy.js"></script>
+        <script src="code/fireball.js"></script>
+        <script src="code/sparkle.js"></script>
+        <script src="code/coinAnim.js"></script>
+        <script src="code/mushroom.js"></script>
+		<script src="code/particle.js"></script>
+		<script src="code/fireFlower.js"></script>
+        <script src="code/bulletBill.js"></script>
+        <script src="code/flowerEnemy.js"></script>
+        <script src="code/shell.js"></script>
+
+        <script src="code/titleState.js"></script>
+        <script src="code/loadingState.js"></script>
+        <script src="code/loseState.js"></script>
+        <script src="code/winState.js"></script>
+        <script src="code/mapState.js"></script>
+        <script src="code/levelState.js"></script>
+
+        <script src="code/music.js"></script>
+
+        <script>$(document).ready(function() { new Enjine.Application().Initialize(new Mario.LoadingState(), 320, 240) });</script>
+	</body>
+</html>
