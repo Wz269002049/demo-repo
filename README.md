@@ -9,7 +9,7 @@
 
 - **文件**：`snake.html`
 - **操作**：方向键 / WASD 移动，空格开始/暂停
-- **试玩**：[点击打开](https://github.com/Wz269002049/demo-repo/blob/main/snake.html)
+- **▶️ 在线试玩**：[点击进入](https://wz269002049.github.io/demo-repo/snake.html)
 
 ### 🍄 无限马里奥
 还原经典版超级马里奥，8 个世界 + 城堡 Boss 关，关卡无限生成。画面为原版像素风格。
@@ -24,7 +24,7 @@
 | `A` | 加速跑 |
 | `S` | 确认键（地图界面进入关卡） |
 
-- **试玩**：[点击进入游戏](https://github.com/Wz269002049/demo-repo/blob/main/mario/index.html)
+- **▶️ 在线试玩**：[点击进入](https://wz269002049.github.io/demo-repo/mario/index.html)
 
 > 无限马里奥为开源项目，由 [Notch](https://en.wikipedia.org/wiki/Markus_Persson) 原作（Java 版），[robertkleffner](https://github.com/robertkleffner/mariohtml5) 移植为 HTML5，本仓库在此基础上有中文界面与按键适配。
 
